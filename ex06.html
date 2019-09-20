@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>웹 연습 06</title>
+    <style></style>
+    <script></script>
+</head>
+<body>
+    <h2>폼 연습</h2>
+    <form action="" method="post">
+        <fieldset>
+            <legend>기본정보</legend>
+            <lable for="m_id">아이디 : </lable><input type="text" id="m_id" title="아이디입력" autofocus size="50" maxlength="10" value="hby0419" disabled><br><br>
+            <input type="password" placeholder="비밀번호를 입력하세요" required><br><br>
+            <input type="file" accept=".gif,.jpg,.png" title="jpg, png, gif 파일만 첨부가능"><br><br>
+            <input type="file" accept="video/*" title="동영상 파일만 첨부가능"><br><br>
+            <lable>좋아 싫어</lable><br>
+            <input type="radio" name="rdo" id="ra1" checked><lable for="ra1">좋아요</lable><br>
+            <input type="radio" name="rdo" id="ra2"><lable for="ra2">싫어요</lable><br>
+            <lable>기분이 어때</lable><br>
+            <input type="checkbox" id="ck1" checked>
+            <lable for="ck1">좋다</lable><br>
+            <input type="checkbox" id="ck2">
+            <lable for="ck2">별로다</lable><br>
+            <input type="checkbox" id="ck3">
+            <lable for="ck3">화난다</lable><br>
+            <input type="checkbox" id="ck4" disabled>
+            <lable for="ck4">슬프다</lable><br><br>
+            <lable for="sel">자주 사용하는 메일주소는?</lable>
+            <select name="" id="sel">
+                <option value="">선택안함</option>
+                <option value="">네이버</option>
+                <option value="">다음</option>
+                <option value="">구글</option>
+            </select><br><br>
+            <lable for="sel2">자주 사용하는 메일주소는?</lable>
+            <input type="text" list="ksb" id="sel2">
+            <datalist id="ksb">
+                <option value="선택안함">선택안함</option>
+                <option value="네이버">네이버</option>
+                <option value="다음">다음</option>
+                <option value="구글">구글</option>
+            </datalist><br><br>
+        <label for="memo">약관</label><br>
+        <textarea name="" id="memo" cols="60" rows="10" readonly>
+            제 1조(목적)
+            1. 본 약관은 기업마당 웅앵웅
+        </textarea> 
+        </fieldset>
+        <fieldset>
+            <legend>추가정보</legend>
+            <input type="color">
+            <br>
+            <input type="date">
+            <br>
+            <input type="datetime">
+            <br>
+            <input type="datetime-local">
+            <br>
+            <input type="time">
+            <br>
+            <input type="month">
+            <br>
+            <input type="week">
+            <br>
+            <input type="number">
+            <br>
+            <input type="range">
+            <br>
+            <input type="tel">
+            <br>
+            <input type="search">
+            <br>
+            <input type="url">
+            <br>
+            <input type="email">
+            <br>
+        </fieldset>
+        <fieldset>
+            <input type="submit"><br>
+            <input type="reset"><br>
+            <input type="image" src="https://placeholder.it/100x30"><br>
+            <input type="button" value="일반버튼"><br>
+            <button>일반버튼2</button>
+        </fieldset>
+    </form>
+</body>
+</html>

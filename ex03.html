@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>웹 연습 03</title>
+    <style></style>
+    <script></script>
+</head>
+<body>
+    <h2 class="tit">미디어요소</h2>
+    <h3>이미지 요소</h3>
+    <div>
+        <img src="https://placehold.it/300x200/333" alt="임시이미지">
+    </div>
+    <picture>
+        <source srcet="https://placehold.it/320x480/333" media="(max-width:767px)">
+        <source srcet="https://placehold.it/768x600/333" media="(min-width:768px)">
+        <img src="https://placehold.it/400x300/333" alt="임시이미지">
+    </picture>
+    <picture>
+        <source type="image/svg+xml" srcet="img1.svg">
+        <source type="image/webp" srcet="img1.webp">
+        <img src="img1.png" alt="이미지">
+    </picture>
+    <h3>비디오 요소</h3>
+    <video>
+        <source srcet="video1_m.mp4" type="video/mp4/" media="(max-width:767px)">
+        <source srcet="video1.mp4" type="video/mp4"  media="(min-width:767px)">
+        <source srcet="video1.webm" type="video/webm">
+        <source srcet="video1.ogv" type="video/ogg">
+    </video>
+    <h3>오디오 요소</h3>
+    <audio>
+        <source src="audio1.mp3" type="audio/mpeg">
+        <source src="audio1.ogg" type="audio/ogg">
+        <source src="audio1.wav" type="audio/wav">
+    </audio>
+    <h3>외부 문서</h3>
+    <iframe src="ex02.html" frameborder="0" scrolling="no"></iframe>
+<!-- 크로스브라우징, 크로스미디어 -->
+</body>
+</html>
